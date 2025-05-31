@@ -139,6 +139,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease;
 }
 
 .foto-perfil {
@@ -190,4 +191,25 @@ footer {
 .icon-list li::before {
     content: "★ ";
     color: #c9a0dc;
+}
+
+@media (max-width: 600px) {
+    .glass-box {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        color: #fafafa;
+    }
+    p {
+        color: #e0e0e0;
+    }
 }
