@@ -134,7 +134,6 @@ footer {
 .glass-box {
     background: rgba(10, 10, 10, 0.6);
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     border-radius: 12px;
     padding: 2.5rem;
     max-width: 800px;
@@ -145,19 +144,20 @@ footer {
 .foto-perfil {
     width: 120px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    display: block;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .titulo-tecnico {
     display: block;
-    width: 100%;
+    margin: 2rem auto 0 auto;
+    max-width: 420px;
+    width: 90%;
     height: auto;
-    margin: 2em auto 1em auto;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
 }
-
 
 @media (min-width: 768px) {
     .titulo {
