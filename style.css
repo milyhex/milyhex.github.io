@@ -1,26 +1,99 @@
-/* style.css */
+/* 🌑 Base general */
 body {
+    background-image: url('background-code.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-color: #0b0b0b;
     color: #e6e6e6;
     font-family: 'Georgia', serif;
     text-align: center;
     margin: 0;
-    padding: 60px 20px;
+    padding: 120px 20px 60px;
+    padding-top: 80px;
+    line-height: 1.6;
 }
 
+
+/* 🔮 Barra de navegación fija y elegante */
+nav {
+    background-color: rgba(56, 12, 68, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+
+    background-image: url('estrellitas.png'), url('estrellitas.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: 40px, 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #f2e5ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    background-image: url('estrellitas.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* ✒️ Títulos */
 h1 {
     font-size: 3em;
     font-weight: bold;
-    color: #c9a0dc; /* lila gótico */
-    margin-bottom: 0.3em;
+    color: #c9a0dc;
+    margin-bottom: 0.4em;
 }
 
+h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* 📝 Párrafos */
 p {
-    font-size: 1.2em;
-    opacity: 0.85;
+    font-size: 1.15em;
     color: #ccc;
+    margin: 0.8em 0;
 }
 
+/* 📎 Enlaces */
 a {
     color: #a37cb2;
     text-decoration: none;
@@ -30,6 +103,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* 🔪 Separador */
 hr {
     border: none;
     height: 1px;
@@ -38,8 +112,32 @@ hr {
     width: 60%;
 }
 
+/* 🦴 Footer */
 footer {
     margin-top: 80px;
     font-size: 0.9em;
     color: #666;
+}
+
+/* 📱 Responsive nav padding */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+}
+
+.glass-box {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
 }
