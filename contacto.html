@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Contacto | Milyhex</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav>
     <ul>
@@ -14,16 +16,47 @@
       <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
-<div class="glass-box">
 
-  <section>
-    <h1>Contacto</h1>
-    <p>¿Querés decirme algo? Muy pronto vas a poder hacerlo desde un formulario. Por ahora, podés contactarme en mis redes.</p>
-  </section>
+  <div class="glass-box">
+    <h2>🦇 Contacto</h2>
+
+    <p>
+      ¿Querés decirme algo? Ahora podés hacerlo desde este formulario encantado.<br>
+      También podés escribirme directo o seguirme en mis redes:
+    </p>
+
+    <ul class="icon-list">
+      <li><strong>★ GitHub:</strong> <a href="https://github.com/milyhex" target="_blank">github.com/milyhex</a></li>
+      <li><strong>★ LinkedIn:</strong> <a href="https://www.linkedin.com/in/milagros-perez123" target="_blank">linkedin.com/in/milagros-perez123</a></li>
+      <li><strong>★ Email:</strong> <a href="mailto:milype1998@gmail.com">milype1998@gmail.com</a></li>
+    </ul>
+
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <p id="status" class=""></p>
+
+    <p style="margin-top: 2rem;">
+      Gracias por visitar mi mundo digital 💜<br>
+      Estoy abierta a colaboraciones, oportunidades y charlas interesantes.
+    </p>
+  </div>
 
   <footer>
     <p>© 2025 Milyhex. Todos los hechizos reservados.</p>
   </footer>
-</div>
+
+  <script src="js/contact.js"></script>
 </body>
+
 </html>
